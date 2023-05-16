@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readmore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            width: 100%;
+            height: 100vh;
+            /* background-image: url(images/bg-img2.jpg); */
+            /* background:radial-gradient(rgb(190, 55, 223),rgb(37, 4, 45)); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 100px;
+        }
+
+        .nav {
+            background-color: rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 3;
+        }
+
+        .nav img {
+            margin-left: 150px;
+            margin-top: 5px;
+        }
+
+        ul {
+            float: right;
+            margin-right: 300px;
+            font-size: 18px;
+            font-family: bold;
+        }
+
+        ul li {
+            display: inline-block;
+            margin-top: 35px;
+
+        }
+
+        ul li a {
+            padding: 25px;
+            text-decoration: none;
+            color: rgb(4, 0, 253);
+            transition: 0.5s;
+
+        }
+
+        li a:hover {
+            color: rgb(218, 207, 2);
+        }
+
+        .nav .icons {
+            float: right;
+            color: rgb(0, 197, 197);
+            margin-left: 450px;
+            margin-top: -65px;
+
+        }
+
+        .nav .icons i {
+            font-size: 23px;
+            letter-spacing: 30px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .nav .icons i:hover {
+            color: rgb(76, 159, 159);
+        }
+
+
+        /* readmore-section */
+        .content {
+            margin-left: 80px;
+            margin-top: 140px;
+        }
+
+        h3 {
+            font-size: 45px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: rgb(94, 177, 249);
+            margin-right: 100px;
+            float: right;
+            margin-top: -370px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-right: 130px;
+            float: right;
+            margin-top: -165px;
+        }
+
+        section {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+
+        .main {
+            margin-left: 80px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        section {
+            font-size: 16px;
+            padding-bottom: 50px;
+           
+        }
+        /* footer-section */
+
+.footer{
+    background-color:  rgb(192, 244, 227);
+}
+.footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,10px));
+    gap: 32px;
+    margin-left: 130px;
+    margin-top: 100px;
+    
+}
+.footer .footer-container .box4 h3{
+    font-size: 30px;
+    color: #222;
+    padding: 16px 0;
+}
+.footer .footer-container .box4 .link{
+    padding: 16px 0;
+    font-size: 16px;
+    color:#121212;
+    display: block;
+}
+.footer .footer-container .box4 .link i{
+    padding-right: 8px;
+    color: #fb6f6f
+}
+.footer .footer-container .box4 .link:hover{
+    color: #fb6f6f
+}
+.footer .footer-container .box4 .link:hover i{
+    padding-right: 32px;
+}
+.footer .footer-container .box4 .share{
+    margin-top: 32px;
+    margin-top: -10px;
+}
+.footer .footer-container .box4 .share a{
+    width:80px;
+    height: 80px;
+    line-height: 72px;
+    font-size: 20px;
+    background: #eee;
+    text-align: center;
+    color: #000000;
+    margin-right: 15px;
+}
+.footer .footer-container .box4 .share a:hover{
+    color: darkred;
+    
+}
+.footer .footer-container .box4 p{
+    padding: 16px 0;
+    font-size: 20px;
+    color: #222;
+}
+.footer .footer-container .box4 form .email{
+    border: 4px solid #222;
+    width: 100%;
+    padding: 19px 22px;
+    text-transform: none;
+    color: #222;
+    margin: 16px 0;
+    font-size: 25px;
+}
+.btn3{
+    padding: 8px 12px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+ }
+ .btn3:hover{
+    background-color: #2d2a2a;
+ }
+
+.footer .credit{
+    text-align: center;
+    margin-right: 100px;
+    padding: 16px;
+    padding-top: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-top: 4px solid #222;
+    color: #222;
+}
+    </style>
+</head>
+
+<body>
+    <!-- header-section -->
+
+    <div id="header">
+        <div class="nav">
+            <img src="images/sahara-logo-01.png">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="shopping.html">SHOPPING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <!-- readmore-section -->
+
+        <div class="content">
+            <h3>SKINCARE</h3>
+            <img src="images/skincare-readmore.jpg" width="700px">
+        </div>
+        <h1>These makeup and skincare <br>must-have hybrids boast<br> serious benefits</h1>
+        <p>Yes, there are beauty buys that can give you a photo-ready look<br> while offering skincaring advantages.
+            Here
+            are
+            <br>the options ahead of the pack
+        </p>
+        <section>You may not be likely to say makeup and skincare in the same breath, but you must. After all, if you’re
+            using a full-coverage foundation to <br>mask your breakouts, some ingredients in the very product may
+            exacerbate
+            your acne. Or your quixotic quest for an eye-opening mascara<br> can lead to lashes that fall or dry out.
+            The
+            solution? Makeup packed with skincare. While active ingredients in cosmetics rarely reach levels <br>that
+            render
+            them completely sufficient to treat a serious skin condition on its own, makeup and skincare must-have
+            hybrids
+            promise a number<br> of benefits. “With a versatile product, you get the dual convenience of makeup and
+            skincare
+            in one. The infusion of super-savvy formulas and <br>skin-loving ingredients confer colour and coverage, and
+            also
+            act as a protective layer ensuring your skin breathes well on the inside and your<br> face dazzles on the
+            outside,”
+            shares Samir Modi, founder and managing director of Colorbar. with a rise in innovative products,
+            <br>separating the good from the great, the better from the best, is harder than
+            ever. So, we have done it for you.</section>
+        <div class="main">
+            <h2>Is mackeup bad for your skin?</h2>
+            <section>The novelty of skin-caring makeup leads one to wonder if traditional makeup is bad for your skin.
+                It’s a
+                complicated question, <br>but let’s make one thing clear. Classifications like “clean” and “natural” do
+                not mean
+                thatthese formulas are safer for you.<br> While the U.S. Food and Drug Administration (FDA) is yet to
+                provide
+                clarity on what criteria do these claims constitute, <br>we see them as evidence thatskin-friendly
+                ingredients
+                are at the heart of these formulations. It’s all about understanding the<br> ingredients inside each
+                product in
+                your routine — just as you would with the food you eat or the ingestible you take.<br><br>
+                It is this philosophy that has inspired many of our favourite brand founders to create products full of
+                desirable and easy-to-understand<br> ingredients. Saie founder and CEO Laney Crowell tells Vogue that
+                she wanted
+                to start her brand to offer makeup products that serve <br>our bodies. “When you start formulating
+                makeup with
+                really clean ingredients that are good for you, you’re left with skincare,” she says.
+
+            </section>
+        </div>
+
+    <!-- footer-section -->
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="box4">
+                <h3>Quick links</h3>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>HOME</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>ABOUT</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>SHOP</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>GALLERY</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>CONTACT</a>
+            </div>
+
+            <div class="box4">
+                <h3>Extra links</h3>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>My Favorite</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>My Order</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>My Wishlist</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Private Policy</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Term Of Use</a>
+            </div>
+
+            <div class="box4">
+                <h3>Contact Info</h3>
+                <a class="link" href=""><i class="fa fa-phone" aria-hidden="true"></i>111-323-7654</a>
+                <a class="link" href=""><i class="fa fa-phone" aria-hidden="true"></i>323-456-9235</a>
+                <a class="link" href=""><i class="fa fa-envelope" aria-hidden="true"></i>sahara@gmail.com</a>
+                <a class="link" href=""><i class="fa fa-map-marker" aria-hidden="true"></i>Pune, Maharashtra, India,
+                    410014</a>
+                <div class="share">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="box4">
+                <h3>Newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <from action="">
+                    <input type="Email" name="" placeholder="Email address" id="" class="Email">
+                    <input type="submit" value="subscribe" class="btn3">
+                </from>
+            </div>
+        </div>
+        <div class="credit">created by keerti</div>
+    </section>
+
+</body>
+
+</html>

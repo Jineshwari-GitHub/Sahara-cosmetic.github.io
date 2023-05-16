@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <title>Shopping</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(images/bg-img2.jpg); */
+    /* background:radial-gradient(rgb(190, 55, 223),rgb(37, 4, 45)); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav {
+    background-color:rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.nav img{
+    margin-left: 150px;
+    margin-top: 5px; 
+}
+ ul{
+    float: right;
+    margin-right: 300px;
+    font-size: 18px;
+    font-family: bold;
+}
+ul li{
+    display: inline-block;
+    margin-top: 35px;
+   
+}
+ul li a{
+    padding: 25px;
+    text-decoration: none;
+    color: rgb(4, 0, 253);
+    transition: 0.5s;
+    z-index: 100px;
+}
+li a:hover{
+    color: rgb(218, 207, 2);
+ }
+ .nav .icons {
+    float: right;
+    color: rgb(0, 197, 197);
+    margin-left: 450px;
+    margin-top: -65px;
+   
+}
+.nav .icons i{
+    font-size: 23px;
+    letter-spacing: 30px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.nav .icons i:hover{
+    color: rgb(76, 159, 159);
+    /* font-size:22px ; */
+}
+
+        /* shop-section */
+
+.shop{
+    color: #e75a5a;
+    margin-left: 200px;
+    margin-top: 100px;
+
+}
+ .shop h1{
+    font-size: 40px;
+    color: #a704ff;
+    margin-left: 450px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+.shop .box-container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px,8px));
+    gap: 32px;
+    margin-left: 30px;
+   }
+.shop .box-container1 .box1{
+    text-align: center;
+    background: #d9f0f7;
+    border: 2px solid #222;
+    border-radius: 8px;
+    box-shadow:8px 8px rgba(0,0,0,0.1);
+    }
+.shop .box-container1 .box1:hover .img1 img{
+    transform: scale(1.1);
+}
+
+.shop .box-container1 .box1 .img1{
+    position: relative;
+    overflow: hidden;
+}
+.shop .box-container1 .box1 .img1 img{
+    height: 230px;
+}
+
+.shop .box-container1 .box1 .img1 .icons{
+   position: absolute;
+   top: 16px;
+   left: 32px;
+   margin-top: 90px;
+   transform: translateX(-160px);
+   transition: 1s;
+}
+.shop .box-container1 .box1 .img1 .icons a{
+   display: block;
+   text-decoration: none;
+   font-size: 20px;
+   width: 40px;
+   height: 40px;
+   line-height: 20px;
+   align-items: center;
+   color: #121212;
+}
+.shop .box-container1 .box1 .img1 .icons a:hover{
+   color: #e75a5a;
+   font-size: 16px;
+}
+.shop .box-container1 .box1:hover .img1 .icons{
+    transform: translateX(0);
+}
+
+
+.shop .box-container1 .box1 .content1{
+    line-height: 35px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+.shop .box-container1 .box1 .content1 h3{
+    font-size: 23px;
+    color:#6d05ff
+}
+.price{
+    font-size: 16px;
+    color: #e75a5a;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: -10px;
+}
+.price span{
+    color: #000000;
+}
+.btn3 {
+    padding: 7px 8px;
+    background-color: #000000;
+    color: #fffcfc;
+    text-decoration: none;  
+    border-radius: 3px;
+   
+}
+
+.btn3:hover{
+    background-color: #232222;
+}
+
+/* offer-section */
+.message{
+    height: 300px;
+    margin-top: 100px;
+    background:rgb(255, 127, 127);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.message .details{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+}
+.details span{
+    font-size: 30px;
+    margin-top: 20px;
+    line-height: 2;
+    color: blueviolet;
+    font-weight: bold;
+}
+.message .details h3{
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.message .details p{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.message .details .btn{
+    padding:10px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #030303;
+    background-color: #dddada;
+    transition: 0.5s;
+}
+.message .details .btn:hover{
+    color: #ffffff;
+    background-color: #141414;
+}
+/* service-section */
+
+.services{
+   display: flex;
+   background: #ec8080;
+   margin-top: 100px;
+}
+.services .box3{
+    text-align: center;
+    padding: 10px;
+    margin-left: 270px;
+}
+.services .box3 img{
+    height: 120px;
+    color: black;
+    margin-bottom: -20px;
+}
+.services .box3 h3{
+    font-size:20px;
+    color: #fff;
+}
+.services .box3 p{
+    line-height:25px;
+    font-family: bold;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* footer-section */
+
+.footer{
+    background-color: rgb(192, 244, 227);
+    
+}
+.footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,10px));
+    gap: 32px;
+    margin-left: 130px;
+    margin-top: 100px;
+}
+.footer .footer-container .box4 h3{
+    font-size: 28px;
+    color: #222;
+    padding: 16px 0;
+}
+.footer .footer-container .box4 .link{
+    padding: 16px 0;
+    font-size: 16px;
+    color:#121212;
+    display: block;
+}
+.footer .footer-container .box4 .link i{
+    padding-right: 8px;
+    color: #fb6f6f;
+}
+.footer .footer-container .box4 .link:hover{
+    color: #fb6f6f;
+}
+.footer .footer-container .box4 .link:hover i{
+    padding-right: 32px;
+}
+.footer .footer-container .box4 .share{
+    margin-top: 32px;
+    margin-top: -10px;
+}
+.footer .footer-container .box4 .share a{
+    width:80px;
+    height: 80px;
+    line-height: 72px;
+    font-size: 20px;
+    background: #eee;
+    text-align: center;
+    color: #000000;
+    margin-right: 15px;
+    
+
+}
+.footer .footer-container .box4 .share a:hover{
+    color: darkred;
+    
+}
+.footer .footer-container .box4 p{
+    padding: 16px 0;
+    font-size: 20px;
+    color: #666;
+}
+.footer .footer-container .box4 form .email{
+    border: 4px solid #222;
+    width: 100%;
+    padding: 19px 22px;
+    text-transform: none;
+    color: #666;
+    margin: 16px 0;
+    font-size: 25px;
+}
+.btn3{
+    padding: 8px 12px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+ }
+ .btn3:hover{
+    background-color: #161616;
+    color: white;
+ }
+.footer .credit{
+    text-align: center;
+    margin-right: 100px;
+    padding: 16px;
+    padding-top: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-top: 4px solid #222;
+    color: #666;
+}
+ </style>
+</head>
+
+<body>
+     <!-- header-section -->
+
+     <div id="header">
+        <div class="nav">
+            <img src="images/sahara-logo-01.png">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="shopping.html">SHOPPING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            </div>
+        </div>
+       
+    
+      <!-- shop-section -->
+
+      <section class="shop" id="shop">
+        <h1 class="heading">Shopping </h1>
+        <div class="box-container1">
+            <!-- 1-img -->
+            <div class="box1">
+                <div class="img1">
+                    <img src="images/moisturizer-img--.png">
+                    <div class="icons">
+                        <a href="#" class="fa fa-share-alt" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-heart" aria-hidden="true"></a>
+                    </div>
+                </div>
+
+                <div class="content1">
+                    <h3>Moisturizer</h3>
+                    <div class="price">$50 <span>$300</span></div>
+                    <a href="#" class="btn3">Add to cart</a>
+                </div>
+            </div>
+            <!-- 2-img -->
+            <div class="box1">
+                <div class="img1">
+                    <img src="images/lipstik-img--.png">
+                    <div class="icons">
+                        <a href="#" class="fa fa-share-alt" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-heart" aria-hidden="true"></a>
+                    </div>
+                </div>
+
+                <div class="content1">
+                    <h3>Matte lipstick</h3>
+                    <div class="price">$50 <span>$300</span></div>
+                    <a href="#" class="btn3">Add to cart</a>
+                </div>
+            </div>
+            <!-- 3-img -->
+            <div class="box1">
+                <div class="img1">
+                    <img src="images/shampo-img--.png">
+                    <div class="icons">
+                        <a href="#" class="fa fa-share-alt" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-heart" aria-hidden="true"></a>
+                     </div>
+                </div>
+
+                <div class="content1">
+                    <h3>shampo and conditioner</h3>
+                    <div class="price">$50 <span>$300</span></div>
+                    <a href="#" class="btn3">Add to cart</a>
+                </div>
+            </div>
+            <!-- 4-img -->
+            <div class="box1">
+                <div class="img1">
+                    <img src="images/eyeliner-img--.png">
+                    <div class="icons">
+                        <a href="#" class="fa fa-share-alt" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-heart" aria-hidden="true"></a>
+                    </div>
+                </div>
+
+                <div class="content1">
+                    <h3>eyeliner pack</h3>
+                    <div class="price">$50 <span>$300</span></div>
+                    <a href="#" class="btn3">Add to cart</a>
+                </div>
+            </div>
+            <!-- 5-img -->
+            <div class="box1">
+                <div class="img1">
+                    <img src="images/foundation-img--.png">
+                    <div class="icons">
+                        <a href="#" class="fa fa-share-alt" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-heart" aria-hidden="true"></a>  
+                    </div>
+                </div>
+
+                <div class="content1">
+                    <h3>Liquid Foundation </h3>
+                    <div class="price">$50 <span>$300</span></div>
+                    <a href="#" class="btn3">Add to cart</a>
+                </div>
+            </div>
+            <!-- 6-img -->
+            <div class="box1">
+                <div class="img1">
+                    <img src="images/perfume-img--.png">
+                    <div class="icons">
+                        <a href="#" class="fa fa-share-alt" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-eye" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-heart" aria-hidden="true"></a>  
+                    </div>
+                </div>
+
+                <div class="content1">
+                    <h3>Pink Lotus Perfume</h3>
+                    <div class="price">$50 <span>$300</span></div>
+                    <a href="#" class="btn3">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- offer-section -->
+    <section class="message">
+        <div class="details">
+            <span>Special Offer </span>
+            <h3>up to 30% 0ff</h3>
+            <p>a product that is being sold for less than its usual price or the act of selling <br>something for less than
+                the usual price.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+     <!-- services-section -->
+
+     <section class="services">
+
+        <div class="box3">
+            <img src="images/free-delivery.png--1.png">
+            <h3>Delivery</h3>
+            <p>Lorem ipsum dolor.</p>
+        </div>
+
+        <div class="box3">
+            <img src="images/secure-pyment.png-.png">
+            <h3>Secure payments</h3>
+            <p>Lorem ipsum dolor.</p>
+        </div>
+
+        <div class="box3">
+            <img src="images/24-7support.png">
+            <h3>24/7 support</h3>
+            <p>Lorem ipsum dolor.</p>
+        </div>
+
+    </section>
+
+
+
+
+      <!-- footer-section -->
+
+      <section class="footer">
+        <div class="footer-container">
+            <div class="box4">
+                <h3>Quick links</h3>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>HOME</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>ABOUT</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>SHOP</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>GALLERY</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>CONTACT</a>
+            </div>
+
+            <div class="box4">
+                <h3>Extra links</h3>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>My Favorite</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>My Order</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>My Wishlist</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Private Policy</a>
+                <a class="link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Term Of Use</a>
+            </div>
+
+            <div class="box4">
+                <h3>Contact Info</h3>
+                <a class="link" href=""><i class="fa fa-phone" aria-hidden="true"></i>111-323-7654</a>
+                <a class="link" href=""><i class="fa fa-phone" aria-hidden="true"></i>323-456-9235</a>
+                <a class="link" href=""><i class="fa fa-envelope" aria-hidden="true"></i>sahara@gmail.com</a>
+                <a class="link" href=""><i class="fa fa-map-marker" aria-hidden="true"></i>Pune, Maharashtra, India,
+                    410014</a>
+                <div class="share">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="box4">
+                <h3>Newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <from action="">
+                    <input type="Email" name="" placeholder="Email address" id="" class="Email">
+                    <input type="submit" value="subscribe" class="btn3">
+                </from>
+            </div>
+        </div>
+        <div class="credit">created by keerti</div>
+    </section>
+
+</body>
+</html>
